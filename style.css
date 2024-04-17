@@ -1,0 +1,109 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    overflow: hidden; /* Hide overflow content */
+    
+}
+
+.header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    margin: 20px auto; /* Center horizontally with margin */
+    border-radius: 20px;
+    box-shadow: 10px 10px 30px #bebebe, -10px -10px 30px #ffffff;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #f0f0f0;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 30px #bebebe, -10px -10px 30px #ffffff;
+    position: relative; /* Set position for absolute positioning */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box p {
+    margin-bottom: 20px;
+}
+
+.view-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.view-btn:hover {
+    background-color: #0056b3;
+}
+
+.view-btn {
+    position: absolute; /* Position the button absolutely */
+    bottom: 20px;
+}
+
+/* .loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+} */
+
+footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 30px #bebebe, -10px -10px 30px #ffffff;
+}
+
+.footer-content {
+    font-size: 18px;
+}
+
+.footer-content a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease-in-out; /* Add smooth transition */
+}
+
+.footer-content a:hover {
+    color: #ff6f61; /* Change color on hover */
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin-top: 100px; /* Adjust margin for smaller screens */
+    }
+
+    .header {
+        margin: 20px auto 50px; /* Adjust margin for smaller screens */
+    }
+}
